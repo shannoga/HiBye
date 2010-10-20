@@ -1,0 +1,334 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3978F038126EDB59006A6D69 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3978F037126EDB59006A6D69 /* UIKit.framework */; };
+		3978F03A126EDB59006A6D69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3978F039126EDB59006A6D69 /* Foundation.framework */; };
+		3978F03C126EDB59006A6D69 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3978F03B126EDB59006A6D69 /* CoreGraphics.framework */; };
+		3978F03E126EDB59006A6D69 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3978F03D126EDB59006A6D69 /* CoreData.framework */; };
+		3978F043126EDB59006A6D69 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3978F041126EDB59006A6D69 /* InfoPlist.strings */; };
+		3978F045126EDB59006A6D69 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3978F044126EDB59006A6D69 /* main.m */; };
+		3978F048126EDB59006A6D69 /* HiByeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3978F047126EDB59006A6D69 /* HiByeAppDelegate.m */; };
+		3978F04B126EDB59006A6D69 /* HiBye.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 3978F04A126EDB59006A6D69 /* HiBye.xcdatamodel */; };
+		3978F04E126EDB59006A6D69 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3978F04C126EDB59006A6D69 /* MainWindow_iPhone.xib */; };
+		3978F051126EDB59006A6D69 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3978F04F126EDB59006A6D69 /* MainWindow_iPad.xib */; };
+		3978F054126EDB59006A6D69 /* HiByeAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 3978F053126EDB59006A6D69 /* HiByeAppDelegate_iPhone.m */; };
+		3978F057126EDB59006A6D69 /* HiByeAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 3978F056126EDB59006A6D69 /* HiByeAppDelegate_iPad.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3978F034126EDB58006A6D69 /* HiBye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiBye.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3978F037126EDB59006A6D69 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3978F039126EDB59006A6D69 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3978F03B126EDB59006A6D69 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3978F03D126EDB59006A6D69 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3978F03F126EDB59006A6D69 /* HiBye-Info.plist */ = {isa = PBXFileReference; path = "HiBye-Info.plist"; sourceTree = "<group>"; };
+		3978F040126EDB59006A6D69 /* HiBye_Prefix.pch */ = {isa = PBXFileReference; path = HiBye_Prefix.pch; sourceTree = "<group>"; };
+		3978F042126EDB59006A6D69 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3978F044126EDB59006A6D69 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3978F046126EDB59006A6D69 /* HiByeAppDelegate.h */ = {isa = PBXFileReference; path = HiByeAppDelegate.h; sourceTree = "<group>"; };
+		3978F047126EDB59006A6D69 /* HiByeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HiByeAppDelegate.m; sourceTree = "<group>"; };
+		3978F04A126EDB59006A6D69 /* HiBye.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HiBye.xcdatamodel; sourceTree = "<group>"; };
+		3978F04D126EDB59006A6D69 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		3978F050126EDB59006A6D69 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+		3978F052126EDB59006A6D69 /* HiByeAppDelegate_iPhone.h */ = {isa = PBXFileReference; path = HiByeAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		3978F053126EDB59006A6D69 /* HiByeAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HiByeAppDelegate_iPhone.m; sourceTree = "<group>"; };
+		3978F055126EDB59006A6D69 /* HiByeAppDelegate_iPad.h */ = {isa = PBXFileReference; path = HiByeAppDelegate_iPad.h; sourceTree = "<group>"; };
+		3978F056126EDB59006A6D69 /* HiByeAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HiByeAppDelegate_iPad.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3978F031126EDB58006A6D69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3978F038126EDB59006A6D69 /* UIKit.framework in Frameworks */,
+				3978F03A126EDB59006A6D69 /* Foundation.framework in Frameworks */,
+				3978F03C126EDB59006A6D69 /* CoreGraphics.framework in Frameworks */,
+				3978F03E126EDB59006A6D69 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3978F023126EDB55006A6D69 = {
+			isa = PBXGroup;
+			children = (
+				3978F02A126EDB57006A6D69 /* iPhone */,
+				3978F02B126EDB58006A6D69 /* iPad */,
+				3978F02C126EDB58006A6D69 /* Classes */,
+				3978F02D126EDB58006A6D69 /* Other Sources */,
+				3978F02E126EDB58006A6D69 /* Resources */,
+				3978F02F126EDB58006A6D69 /* Frameworks */,
+				3978F035126EDB58006A6D69 /* Products */,
+				3978F049126EDB59006A6D69 /* Models */,
+			);
+			sourceTree = "<group>";
+		};
+		3978F02A126EDB57006A6D69 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				3978F04C126EDB59006A6D69 /* MainWindow_iPhone.xib */,
+				3978F052126EDB59006A6D69 /* HiByeAppDelegate_iPhone.h */,
+				3978F053126EDB59006A6D69 /* HiByeAppDelegate_iPhone.m */,
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
+		3978F02B126EDB58006A6D69 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				3978F04F126EDB59006A6D69 /* MainWindow_iPad.xib */,
+				3978F055126EDB59006A6D69 /* HiByeAppDelegate_iPad.h */,
+				3978F056126EDB59006A6D69 /* HiByeAppDelegate_iPad.m */,
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+		3978F02C126EDB58006A6D69 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3978F046126EDB59006A6D69 /* HiByeAppDelegate.h */,
+				3978F047126EDB59006A6D69 /* HiByeAppDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3978F02D126EDB58006A6D69 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3978F040126EDB59006A6D69 /* HiBye_Prefix.pch */,
+				3978F044126EDB59006A6D69 /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		3978F02E126EDB58006A6D69 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3978F03F126EDB59006A6D69 /* HiBye-Info.plist */,
+				3978F041126EDB59006A6D69 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3978F02F126EDB58006A6D69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3978F037126EDB59006A6D69 /* UIKit.framework */,
+				3978F039126EDB59006A6D69 /* Foundation.framework */,
+				3978F03B126EDB59006A6D69 /* CoreGraphics.framework */,
+				3978F03D126EDB59006A6D69 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3978F035126EDB58006A6D69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3978F034126EDB58006A6D69 /* HiBye.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3978F049126EDB59006A6D69 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3978F04A126EDB59006A6D69 /* HiBye.xcdatamodel */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3978F033126EDB58006A6D69 /* HiBye */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3978F05A126EDB59006A6D69 /* Build configuration list for PBXNativeTarget "HiBye" */;
+			buildPhases = (
+				3978F030126EDB58006A6D69 /* Sources */,
+				3978F031126EDB58006A6D69 /* Frameworks */,
+				3978F032126EDB58006A6D69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HiBye;
+			productName = HiBye;
+			productReference = 3978F034126EDB58006A6D69 /* HiBye.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3978F025126EDB55006A6D69 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "shani hajbi";
+			};
+			buildConfigurationList = 3978F028126EDB55006A6D69 /* Build configuration list for PBXProject "HiBye" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3978F023126EDB55006A6D69;
+			productRefGroup = 3978F035126EDB58006A6D69 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3978F033126EDB58006A6D69 /* HiBye */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3978F032126EDB58006A6D69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3978F043126EDB59006A6D69 /* InfoPlist.strings in Resources */,
+				3978F04E126EDB59006A6D69 /* MainWindow_iPhone.xib in Resources */,
+				3978F051126EDB59006A6D69 /* MainWindow_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3978F030126EDB58006A6D69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3978F045126EDB59006A6D69 /* main.m in Sources */,
+				3978F048126EDB59006A6D69 /* HiByeAppDelegate.m in Sources */,
+				3978F04B126EDB59006A6D69 /* HiBye.xcdatamodel in Sources */,
+				3978F054126EDB59006A6D69 /* HiByeAppDelegate_iPhone.m in Sources */,
+				3978F057126EDB59006A6D69 /* HiByeAppDelegate_iPad.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3978F041126EDB59006A6D69 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3978F042126EDB59006A6D69 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3978F04C126EDB59006A6D69 /* MainWindow_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3978F04D126EDB59006A6D69 /* en */,
+			);
+			name = MainWindow_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		3978F04F126EDB59006A6D69 /* MainWindow_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3978F050126EDB59006A6D69 /* en */,
+			);
+			name = MainWindow_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3978F058126EDB59006A6D69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3978F059126EDB59006A6D69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3978F05B126EDB59006A6D69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = HiBye_Prefix.pch;
+				INFOPLIST_FILE = "HiBye-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3978F05C126EDB59006A6D69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = HiBye_Prefix.pch;
+				INFOPLIST_FILE = "HiBye-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3978F028126EDB55006A6D69 /* Build configuration list for PBXProject "HiBye" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3978F058126EDB59006A6D69 /* Debug */,
+				3978F059126EDB59006A6D69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3978F05A126EDB59006A6D69 /* Build configuration list for PBXNativeTarget "HiBye" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3978F05B126EDB59006A6D69 /* Debug */,
+				3978F05C126EDB59006A6D69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3978F025126EDB55006A6D69 /* Project object */;
+}
