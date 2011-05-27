@@ -25,6 +25,7 @@
 		//m.backgroundColor=[UIColor clearColor];
 		//m.frame = CGRectMake(0, 0, masker1.size.width, masker1.size.height);
 		//[self addSubview:m];
+        NSLog(@"shani");
     }
     return self;
 }
