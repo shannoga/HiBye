@@ -1,0 +1,86 @@
+/* 
+  Localizable.strings
+  HiBye
+
+  Created by shani hajbi on 10/24/10.
+  Copyright (c) 2010 shani hajbi. All rights reserved.
+*/
+
+
+"HiBye" = "הי-ביי";
+"Archive" = "ארכיון";
+"Settings" = "הגדרות";
+"No Note" = "אין הערות";
+
+//categories
+"Dating" = "דייטים";
+"Work" = "עבודה";
+"Professionals" = "בעלי מקצוע";
+"Stores" = "חנויות";
+"Traveling" = "נסיעות";
+"Leads" = "לקוחות";
+"Events" = "אירועים";
+"No Category" = "ללא קטגוריה";
+
+//main table view
+"All" = "הכל";
+"Expired" = "פגי תוקף";
+
+"Add new HiBye contact"= "הוסף איש קשר חדש להיי-ביי";
+"Cancel"= "בטל";
+"Add New Contact"= "צור איש קשר חדש";
+"Select Existing Contact"= "בחר איש קשר קיים";
+"Set Contact Timer"= "קבע טיימר לאיש הקשר";
+"Use Default Timer"= "החל טיימר ברירת מחדל";
+"Set Custom Timer"= "קבע טיימר מותרם אישית";
+"Selected contact allready exist in HiBye" = "איש הקשר הנבחר קיים כבר בהיי-ביי";
+"Set new Timer" = "הגדר טיימר חדש";
+
+"Delete Selected Contact" = "מחק איש קשר";
+"Delete" = "מחק";
+"Send contact to Archive" = "שלח איש קשר לארכיון";
+"Send To Archive" = "שלח לארכיון";
+"Save Contact Permanently" = "שמור איש קשר לצמיתות";
+"Save permanently" = "שמור כקבוע";
+
+//settings controller
+"Timer Settings" = "טיימר";
+"Default Timer" = "טיימר ברירת מחדל";
+"Alert before delition" = "התראה לפני מחיקה";
+"Archive" = "שלח לארכיון"; 
+"Categories Settings" = "קטגוריות";
+"Preset categories" = "קטגוריות מובנות";
+
+"Display Settings"="תצוגה";
+"Sort contacts by" = "מיין אנשי קשר לפי";
+"first,last"= "פרטי, משפחה";
+"last,first"= "משפחה, פרטי";
+
+
+//timer reseting
+"Reset Timer" = "הגדר טיימר";
+"Days"= "ימים";
+"Weeks"= "שבועות";
+"Months"= "חודשים";
+
+"Week" = "שבוע";
+"Day"= "יום";
+"Month"= "חודש";
+
+"0 Days" = "0 ימים";
+
+
+//person view controller
+
+"Delete\nPermanently"="מחק \n לצמיתות";
+"Send to\n Archive"="שלח \n לארכיון";
+"Save\nPermanently"="שמור \n כקבוע";
+"Set category"="בחר קטגוריה";
+"Change category"="שנה קטגוריה";
+"Note" = "הערה";
+"Reset timer" = "הגדר טיימר חדש";
+"days ago"="ימים חלפו";
+
+
+
+

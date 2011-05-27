@@ -1,0 +1,5 @@
+/Users/shannoga/Dropbox/xCode Projects/HiBye2/HiBye/Classes/AddViewController.m: In function '-[AddViewController tableViewModel:valueChangedForRowAtIndexPath:]':
+/Users/shannoga/Dropbox/xCode Projects/HiBye2/HiBye/Classes/AddViewController.m:218: warning: 'DataDetectionView' may not respond to '-setDataDetection:'
+/Users/shannoga/Dropbox/xCode Projects/HiBye2/HiBye/Classes/AddViewController.m:218: warning: (Messages without a matching method signature
+/Users/shannoga/Dropbox/xCode Projects/HiBye2/HiBye/Classes/AddViewController.m:218: warning: will be assumed to return 'id' and accept
+/Users/shannoga/Dropbox/xCode Projects/HiBye2/HiBye/Classes/AddViewController.m:218: warning: '...' as arguments.)

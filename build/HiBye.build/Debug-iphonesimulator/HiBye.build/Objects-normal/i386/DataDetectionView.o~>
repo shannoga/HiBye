@@ -1,0 +1,38 @@
+/Users/shannoga/Dropbox/xCode Projects/HiBye2/HiBye/Classes/DataDetectionView.m: In function '-[DataDetectionView setDataDetection:]':
+/Users/shannoga/Dropbox/xCode Projects/HiBye2/HiBye/Classes/DataDetectionView.m:30: error: expected expression before '<' token
+/Users/shannoga/Dropbox/xCode Projects/HiBye2/HiBye/Classes/DataDetectionView.m:31: error: incompatible types in assignment
+/Users/shannoga/Dropbox/xCode Projects/HiBye2/HiBye/Classes/DataDetectionView.m:31: error: expected ';' before 'mailAlpha'
+/Users/shannoga/Dropbox/xCode Projects/HiBye2/HiBye/Classes/DataDetectionView.m:32: error: 'arr' undeclared (first use in this function)
+/Users/shannoga/Dropbox/xCode Projects/HiBye2/HiBye/Classes/DataDetectionView.m:32: error: (Each undeclared identifier is reported only once
+/Users/shannoga/Dropbox/xCode Projects/HiBye2/HiBye/Classes/DataDetectionView.m:32: error: for each function it appears in.)
+{standard input}:117:non-relocatable subtraction expression, "LC0" minus "L00000000001$pb"
+{standard input}:117:symbol: "LC0" can't be undefined in a subtraction expression
+{standard input}:112:non-relocatable subtraction expression, "L_OBJC_IVAR_$_DataDetectionView.urlAlpha$non_lazy_ptr" minus "L00000000001$pb"
+{standard input}:112:symbol: "L_OBJC_IVAR_$_DataDetectionView.urlAlpha$non_lazy_ptr" can't be undefined in a subtraction expression
+{standard input}:107:non-relocatable subtraction expression, "LC0" minus "L00000000001$pb"
+{standard input}:107:symbol: "LC0" can't be undefined in a subtraction expression
+{standard input}:102:non-relocatable subtraction expression, "L_OBJC_IVAR_$_DataDetectionView.mailAlpha$non_lazy_ptr" minus "L00000000001$pb"
+{standard input}:102:symbol: "L_OBJC_IVAR_$_DataDetectionView.mailAlpha$non_lazy_ptr" can't be undefined in a subtraction expression
+{standard input}:97:non-relocatable subtraction expression, "LC0" minus "L00000000001$pb"
+{standard input}:97:symbol: "LC0" can't be undefined in a subtraction expression
+{standard input}:92:non-relocatable subtraction expression, "L_OBJC_IVAR_$_DataDetectionView.phoneAlpha$non_lazy_ptr" minus "L00000000001$pb"
+{standard input}:92:symbol: "L_OBJC_IVAR_$_DataDetectionView.phoneAlpha$non_lazy_ptr" can't be undefined in a subtraction expression
+{standard input}:84:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000001$pb"
+{standard input}:84:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression
+{standard input}:77:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000001$pb"
+{standard input}:77:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression
+{standard input}:74:non-relocatable subtraction expression, "L_OBJC_CLASSLIST_REFERENCES_$_1" minus "L00000000001$pb"
+{standard input}:74:symbol: "L_OBJC_CLASSLIST_REFERENCES_$_1" can't be undefined in a subtraction expression
+{standard input}:56:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_0" minus "L00000000001$pb"
+{standard input}:56:symbol: "L_OBJC_SELECTOR_REFERENCES_0" can't be undefined in a subtraction expression
+{standard input}:52:non-relocatable subtraction expression, "L_OBJC_CLASSLIST_SUP_REFS_$_0" minus "L00000000001$pb"
+{standard input}:52:symbol: "L_OBJC_CLASSLIST_SUP_REFS_$_0" can't be undefined in a subtraction expression
+{standard input}:unknown:Undefined local symbol L_OBJC_CLASSLIST_SUP_REFS_$_0
+{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_0
+{standard input}:unknown:Undefined local symbol L_OBJC_CLASSLIST_REFERENCES_$_1
+{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_1
+{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_2
+{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_DataDetectionView.phoneAlpha$non_lazy_ptr
+{standard input}:unknown:Undefined local symbol LC0
+{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_DataDetectionView.mailAlpha$non_lazy_ptr
+{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_DataDetectionView.urlAlpha$non_lazy_ptr

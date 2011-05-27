@@ -13,14 +13,13 @@ const NSInteger kViewTag = 1;
 
 @implementation TextFieldController
 
-@synthesize textFieldNormal, textFieldRounded, textFieldSecure, textFieldLeftView, dataSourceArray;
+@synthesize  textFieldRounded, dataSourceArray;
 
 - (void)dealloc
 {
-	[textFieldNormal release];
+	
 	[textFieldRounded release];
-	[textFieldSecure release];
-	[textFieldLeftView release];
+	
 	
 	[dataSourceArray release];
 	
@@ -32,30 +31,14 @@ const NSInteger kViewTag = 1;
 	[super viewDidLoad];
 	
 	self.dataSourceArray = [NSArray arrayWithObjects:
-								[NSDictionary dictionaryWithObjectsAndKeys:
-								 @"UITextField", kSectionTitleKey,
-								 @"TextFieldController.m: textFieldNormal", kSourceKey,
-								 self.textFieldNormal, kViewKey,
-							 nil],
+							
+								
 							
 							[NSDictionary dictionaryWithObjectsAndKeys:
 								 @"UITextField Rounded", kSectionTitleKey,
 								 @"TextFieldController.m: textFieldRounded", kSourceKey,
 								 self.textFieldRounded, kViewKey,
-							 nil],
-							
-							[NSDictionary dictionaryWithObjectsAndKeys:
-								 @"UITextField Secure", kSectionTitleKey,
-								 @"TextFieldController.m: textFieldSecure", kSourceKey,
-								 self.textFieldSecure, kViewKey,
-							 nil],
-							
-							[NSDictionary dictionaryWithObjectsAndKeys:
-								 @"UITextField (with LeftView)", kSectionTitleKey,
-								 @"TextFieldController.m: textFieldLeftView", kSourceKey,
-								 self.textFieldLeftView, kViewKey,
-								 nil],
-							nil];
+							 nil],nil];
 	
 	self.title = NSLocalizedString(@"TextFieldTitle", @"");
 	
@@ -74,14 +57,10 @@ const NSInteger kViewTag = 1;
 	// release the controls and set them nil in case they were ever created
 	// note: we can't use "self.xxx = nil" since they are read only properties
 	//
-	[textFieldNormal release];
-	textFieldNormal = nil;		
+		
 	[textFieldRounded release];
 	textFieldRounded = nil;
-	[textFieldSecure release];
-	textFieldSecure = nil;
-	[textFieldLeftView release];
-	textFieldLeftView = nil;
+	
 	
 	self.dataSourceArray = nil;
 }
@@ -95,10 +74,7 @@ const NSInteger kViewTag = 1;
 	return [self.dataSourceArray count];
 }
 
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
-{
-	return [[self.dataSourceArray objectAtIndex: section] valueForKey:kSectionTitleKey];
-}
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -110,7 +86,7 @@ const NSInteger kViewTag = 1;
 //
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	return ([indexPath row] == 0) ? 50.0 : 22.0;
+	return 44.0;
 }
 
 // to determine which UITableViewCell to be used on a given row.
@@ -156,7 +132,7 @@ const NSInteger kViewTag = 1;
             cell.textLabel.font = [UIFont systemFontOfSize:12];
 		}
 		
-		cell.textLabel.text = [[self.dataSourceArray objectAtIndex: indexPath.section] valueForKey:kSourceKey];
+		
 	}
 	
     return cell;
@@ -177,34 +153,6 @@ const NSInteger kViewTag = 1;
 #pragma mark -
 #pragma mark Text Fields
 
-- (UITextField *)textFieldNormal
-{
-	if (textFieldNormal == nil)
-	{
-		CGRect frame = CGRectMake(kLeftMargin, 8.0, kTextFieldWidth, kTextFieldHeight);
-		textFieldNormal = [[UITextField alloc] initWithFrame:frame];
-		
-		textFieldNormal.borderStyle = UITextBorderStyleBezel;
-		textFieldNormal.textColor = [UIColor blackColor];
-		textFieldNormal.font = [UIFont systemFontOfSize:17.0];
-		textFieldNormal.placeholder = @"<enter text>";
-		textFieldNormal.backgroundColor = [UIColor whiteColor];
-		textFieldNormal.autocorrectionType = UITextAutocorrectionTypeNo;	// no auto correction support
-		
-		textFieldNormal.keyboardType = UIKeyboardTypeDefault;	// use the default type input method (entire keyboard)
-		textFieldNormal.returnKeyType = UIReturnKeyDone;
-		
-		textFieldNormal.clearButtonMode = UITextFieldViewModeWhileEditing;	// has a clear 'x' button to the right
-		
-		textFieldNormal.tag = kViewTag;		// tag this control so we can remove it later for recycled cells
-		
-		textFieldNormal.delegate = self;	// let us be the delegate so we know when the keyboard's "Done" button is pressed
-		
-		// Add an accessibility label that describes what the text field is for.
-		[textFieldNormal setAccessibilityLabel:NSLocalizedString(@"NormalTextField", @"")];
-	}	
-	return textFieldNormal;
-}
 
 - (UITextField *)textFieldRounded
 {
@@ -213,10 +161,10 @@ const NSInteger kViewTag = 1;
 		CGRect frame = CGRectMake(kLeftMargin, 8.0, kTextFieldWidth, kTextFieldHeight);
 		textFieldRounded = [[UITextField alloc] initWithFrame:frame];
 		
-		textFieldRounded.borderStyle = UITextBorderStyleRoundedRect;
+		textFieldRounded.borderStyle = UITextBorderStyleNone;
 		textFieldRounded.textColor = [UIColor blackColor];
 		textFieldRounded.font = [UIFont systemFontOfSize:17.0];
-		textFieldRounded.placeholder = @"<enter text>";
+		textFieldRounded.placeholder = @"enter category";
 		textFieldRounded.backgroundColor = [UIColor whiteColor];
 		textFieldRounded.autocorrectionType = UITextAutocorrectionTypeNo;	// no auto correction support
 		
@@ -235,63 +183,6 @@ const NSInteger kViewTag = 1;
 	return textFieldRounded;
 }
 
-- (UITextField *)textFieldSecure
-{
-	if (textFieldSecure == nil)
-	{
-		CGRect frame = CGRectMake(kLeftMargin, 8.0, kTextFieldWidth, kTextFieldHeight);
-		textFieldSecure = [[UITextField alloc] initWithFrame:frame];
-		textFieldSecure.borderStyle = UITextBorderStyleBezel;
-		textFieldSecure.textColor = [UIColor blackColor];
-		textFieldSecure.font = [UIFont systemFontOfSize:17.0];
-		textFieldSecure.placeholder = @"<enter password>";
-		textFieldSecure.backgroundColor = [UIColor whiteColor];
-		
-		textFieldSecure.keyboardType = UIKeyboardTypeDefault;
-		textFieldSecure.returnKeyType = UIReturnKeyDone;	
-		textFieldSecure.secureTextEntry = YES;	// make the text entry secure (bullets)
-		
-		textFieldSecure.clearButtonMode = UITextFieldViewModeWhileEditing;	// has a clear 'x' button to the right
-		
-		textFieldSecure.tag = kViewTag;		// tag this control so we can remove it later for recycled cells
-		
-		textFieldSecure.delegate = self;	// let us be the delegate so we know when the keyboard's "Done" button is pressed
-		
-		// Add an accessibility label that describes what the text field is for.
-		[textFieldSecure setAccessibilityLabel:NSLocalizedString(@"SecureTextField", @"")];
-	}
-	return textFieldSecure;
-}
-
-- (UITextField *)textFieldLeftView
-{
-	if (textFieldLeftView == nil)
-	{
-		CGRect frame = CGRectMake(kLeftMargin, 8.0, kTextFieldWidth, kTextFieldHeight);
-		textFieldLeftView = [[UITextField alloc] initWithFrame:frame];
-		textFieldLeftView.borderStyle = UITextBorderStyleBezel;
-		textFieldLeftView.textColor = [UIColor blackColor];
-		textFieldLeftView.font = [UIFont systemFontOfSize:17.0];
-		textFieldLeftView.placeholder = @"<enter text>";
-		textFieldLeftView.backgroundColor = [UIColor whiteColor];
-		
-		textFieldLeftView.keyboardType = UIKeyboardTypeDefault;
-		textFieldLeftView.returnKeyType = UIReturnKeyDone;	
-		
-		textFieldLeftView.clearButtonMode = UITextFieldViewModeWhileEditing;	// has a clear 'x' button to the right
-		
-		textFieldLeftView.tag = kViewTag;		// tag this control so we can remove it later for recycled cells
-		
-		// Add an accessibility label that describes the text field.
-		[textFieldLeftView setAccessibilityLabel:NSLocalizedString(@"CheckMarkIcon", @"")];
-		
-		textFieldLeftView.leftView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"segment_check.png"]];
-		textFieldLeftView.leftViewMode = UITextFieldViewModeAlways;
-		
-		textFieldLeftView.delegate = self;	// let us be the delegate so we know when the keyboard's "Done" button is pressed
-	}
-	return textFieldLeftView;
-}
 
 @end
 
